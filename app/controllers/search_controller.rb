@@ -5,7 +5,7 @@ class SearchController < ApplicationController
     raw_fuel_stations = JSON.parse(response.body)["fuel_stations"]
 
     @fuel_stations = raw_fuel_stations.map do |fuel_station_info|
-      FuelStation.create({
+      FuelStation.new({
         name: fuel_station_info["station_name"],
         address: fuel_station_info["street_address"],
         fuel_type_code: fuel_station_info["fuel_type_code"],
