@@ -14,20 +14,20 @@ describe "When a user visits the root, fills in the search form with 80203, and 
 
     expect(page).to have_content("UDR")
     expect(page).to have_content("800 Acoma St")
-    expect(page).to have_content("Electric")
+    expect(page).to have_content("ELEC")
     expect(page).to have_content("0.31422 miles")
     expect(page).to have_content("24 hours daily")
 
     expect(page).to have_content("City of Denver - Wellington E Webb Municipal Building")
     expect(page).to have_content("202 W Colfax Ave")
-    expect(page).to have_content("Electric")
+    expect(page).to have_content("ELEC")
     expect(page).to have_content("0.77306 miles")
     expect(page).to have_content("Employee use only")
 
-    expect(page).not_to have_content("Biodiesel (B20 and above)")
-    expect(page).not_to have_content("Compressed Natural Gas")
-    expect(page).not_to have_content("Ethanol (E85)")
-    expect(page).not_to have_content("Hydrogen")
-    expect(page).not_to have_content("Liquefied Natural Gas")
+    expect(page).not_to have_content("BD")
+    expect(page).not_to have_content("CNG")
+    expect(page).not_to have_content("E85")
+    expect(page).not_to have_content("HY")
+    expect(page).not_to have_content("LNG")
   end
 end
