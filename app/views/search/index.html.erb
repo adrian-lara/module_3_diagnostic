@@ -1,0 +1,11 @@
+<h1>Stations (<%= @fuel_stations.count %>)</h1>
+
+<% @fuel_stations.each do |fuel_station| %>
+  <ul>
+    <h5><%= fuel_station.name %></h5>
+    <li>Address: <%= fuel_station.address %></li>
+    <li>Fuel Codes: <%= fuel_station.fuel_type_code %></li>
+    <li>Distance: <%= fuel_station.distance %> miles</li>
+    <li>Hours: <%= fuel_station.access_times %></li>
+  </ul>
+<% end %>

@@ -9,11 +9,10 @@ class SearchController < ApplicationController
         name: fuel_station_info["station_name"],
         address: fuel_station_info["street_address"],
         fuel_type_code: fuel_station_info["fuel_type_code"],
-        distance: fuel_station_info["distance"], #TODO distance is relative to current query??? Will keep as is for now
+        distance: fuel_station_info["distance"],
         access_times: fuel_station_info["access_days_time"]
       })
     end
-
   end
 
 end
